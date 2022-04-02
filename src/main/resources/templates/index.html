@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	  
+<head> 
+	<title>CafeDaManhaApp</title>
+</head>
+<body>
+
+<h1>Lista para o cafe da manha</h1>
+<h3><a href ="/cadastrar">Cadastrar</a></h3>
+
+<div th:each="cafeDaManha: ${cadastros}">
+	<div class= "row">
+	<p><samp>th:text="${cafeDaManha.nome}</samp></p>
+	<p><samp>th:text="${cafeDaManha.cpf}</samp></p>
+	<p><samp>th:text="${cafeDaManha.data}</samp></p>
+	<p><samp>th:text="${cafeDaManha.trazer}</samp></p>
+	</div>
+
+
+</div>
+
+</body>
+
+</html>
